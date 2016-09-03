@@ -49,52 +49,52 @@ function toggleShowCaseOnMenuItemClick(){
 var tictactoe = document.getElementById("tictactoe");
 tictactoe.id = "tictactoe";
 tictactoe.source = "projects/tictactoe/tictactoe.html#board";
-tictactoe.summary = "project-index/projects.html#tictactoe";
+tictactoe.summary = "projectindex/projects.html#tictactoe";
 tictactoe.category = "games";
 tictactoe.controls = "projects/tictactoe/tictactoe.html#controls";
 
 var puzzle = document.getElementById("puzzle");
 puzzle.id = "puzzle";
 puzzle.source = "projects/puzzle/puzzle.html#board";
-puzzle.summary = "project-index/projects.html#puzzle";
+puzzle.summary = "projectindex/projects.html#puzzle";
 puzzle.category = "games";
 puzzle.controls = "projects/puzzle/puzzle.html#controls";
 
 var rsp = document.getElementById("rsp");
 rsp.id = "rsp";
-rsp.source = "project-index/projects.html#demoImage";
-rsp.summary = "project-index/projects.html#rsp";
+rsp.source = "projectindex/projects.html#demoImage";
+rsp.summary = "projectindex/projects.html#rsp";
 rsp.category = "games";
 rsp.controls = "";
 
 var u_demo_1 = document.getElementById("u_demo_1");
 u_demo_1.id = "u_demo_1";
-u_demo_1.source = "project-index/projects.html#demoImage";
-u_demo_1.summary = "project-index/projects.html#demo";
+u_demo_1.source = "projectindex/projects.html#demoImage";
+u_demo_1.summary = "projectindex/projects.html#demo";
 u_demo_1.category = "utility";
 
 var u_demo_2 = document.getElementById("u_demo_2");
 u_demo_2.id = "u_demo_2";
-u_demo_2.source = "project-index/projects.html#demoImage";
-u_demo_2.summary = "project-index/projects.html#demo";
+u_demo_2.source = "projectindex/projects.html#demoImage";
+u_demo_2.summary = "projectindex/projects.html#demo";
 u_demo_2.category = "utility";
 
 var u_demo_3 = document.getElementById("u_demo_3");
 u_demo_3.id = "u_demo_3";
-u_demo_3.source = "project-index/projects.html#demoImage";
-u_demo_3.summary = "project-index/projects.html#demo";
+u_demo_3.source = "projectindex/projects.html#demoImage";
+u_demo_3.summary = "projectindex/projects.html#demo";
 u_demo_3.category = "utility";
 
 var o_demo_1 = document.getElementById("o_demo_1");
 o_demo_1.id = "o_demo_1";
-o_demo_1.source = "project-index/projects.html#demoImage";
-o_demo_1.summary = "project-index/projects.html#demo";
+o_demo_1.source = "projectindex/projects.html#demoImage";
+o_demo_1.summary = "projectindex/projects.html#demo";
 o_demo_1.category = "other";
 
 var o_demo_2 = document.getElementById("o_demo_2");
 o_demo_2.id = "o_demo_2";
-o_demo_2.source = "project-index/projects.html#demoImage";
-o_demo_2.summary = "project-index/projects.html#demo";
+o_demo_2.source = "projectindex/projects.html#demoImage";
+o_demo_2.summary = "projectindex/projects.html#demo";
 o_demo_2.category = "other";
 // need an array of those objects for looping through;
 var projectList = [tictactoe, puzzle, rsp, u_demo_1, u_demo_2, u_demo_3, o_demo_1, o_demo_2];
