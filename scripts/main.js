@@ -30,12 +30,12 @@ portfolioSwitch.addEventListener("click", toggleBoard);
 document.getElementById("hide_button").addEventListener("click", toggleBoard);
 var projectThumbs = document.getElementsByClassName("project_grid");
 function toggleShowCasesOnThumbClick() {
-  document.getElementById("portfolio_showcase").style = "top: 200vw;";
-  document.getElementById("project_details").style = "top: 8vw;";  
+  document.getElementById("portfolio_showcase").style = "top: 1200px;";
+  document.getElementById("project_details").style = "top: 100px;";  
 }
 function toggleShowCaseOnMenuItemClick(){
-  document.getElementById("portfolio_showcase").style = "top: 8vw;";
-  document.getElementById("project_details").style="top: 200vw;";
+  document.getElementById("portfolio_showcase").style = "top: 100px;";
+  document.getElementById("project_details").style="top: 1200px;";
 }
 
 // realization at a later time, we need to create the project window and a details window

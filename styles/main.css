@@ -153,12 +153,14 @@ p {
     margin: 2% auto;
     padding: 2%;
     overflow: hidden;
-    top: 8vw;
+    top: 100px; /* for illiterate browsers like chorme */
+    /*top: 8vw;*/
     transition: 2s;
 }
 
 #project_details {
-    top: 200vw;
+    top: 1200px; /* for illiterate browsers like chorme */
+    /*top: 200vw;*/
 }
 
 #project_window, #project_summary {
