@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  background-color: transparent;
+  color: #FFFFFF;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.boundary {
+  width: 500px;
+  height: 500px;
+}
+
+.board {
+  width: 100vw;
+  height: 100vw;
+  background-image: url("images/boardback.svg");
+  background-size: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  }
+
+.box {
+  height: 33.33%;
+  width: 33.33%;
+  float: left;
+  background-image: url("images/players.png");
+  background-size: 300%;
+}
+
+#controls {
+  width: 600px;
+  height: 120px;
+}
