@@ -163,13 +163,13 @@ function filterProjects() {
   selectedCategoryId = this.id;
   if (selectedCategoryId == "all") {
     for (i=0; i<projectThumbs.length; i++) {
-      projectThumbs[i].style = "display: inline";
+      projectThumbs[i].style = "left: 0; opacity: 1; position: relative;";
     }
   } else {
     for (i=0; i<projectThumbs.length; i++) {
-    projectThumbs[i].style = "display: inline";
+    projectThumbs[i].style = "left: 0; opacity: 1; position: relative;";
     if (selectedCategoryId != projectThumbs[i].category) {
-      projectThumbs[i].style = "display: none";
+      projectThumbs[i].style = "left: 1200px; opacity: 0; position: absolute;";
       }    
     }    
   }  

@@ -117,8 +117,22 @@ p {
 }
 
 #up_button {
-    height: 30px;
-    width: 45px;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    right: 150px;
+    bottom: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    padding: 8px 0;
+    z-index: 50;
+}
+
+.up_arrow{
+    width: 40px;
+    height: 40px;    
 }
 
 .portfolio_dashboard h2 {
@@ -196,6 +210,7 @@ p {
     border-radius: 100%;
     overflow: hidden;
     background-size: cover;
+    transition: 1s;
 }
 
 .project_grid:hover {
