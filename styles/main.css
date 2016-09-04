@@ -102,6 +102,7 @@ p {
     color: rgba(255,255,255,1);
     border-radius: 5px;
     transition: 1.50s;
+    transform: translate(0);
     overflow: hidden;
     z-index: 5;
 }
@@ -146,7 +147,7 @@ p {
 }
 
 #portfolio_showcase, #project_details {
-    position: absolute;
+    position: fixed; /* if parent has transform: translate; co-ordinates start from parents not window */
     width: 98%;
     height: auto;
     border-top: 1px solid;
