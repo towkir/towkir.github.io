@@ -179,3 +179,15 @@ function filterProjects() {
 for (i=0;i<ribbon_items.length;i++) {
   ribbon_items[i].addEventListener("click", filterProjects);
 }
+// function for enabling the take to top button (up button);
+function scrollToTopButton() {
+  if (window.scrollY >= 250) {
+    document.getElementById("up_button").style = "bottom: 50px; opacity: 1;";
+  } else {
+    document.getElementById("up_button").style = "bottom: -50px; opacity: 0;";
+  }
+}
+// call the function while scroll happens;
+window.addEventListener("scroll", scrollToTopButton);
+// take the viewport to top if I click the button:
+document.getElementById("up_button").addEventListener("click", function(){window.scroll(0,0);});
