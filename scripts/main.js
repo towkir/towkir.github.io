@@ -62,10 +62,10 @@ puzzle.controls = "projects/puzzle/puzzle.html#controls";
 
 var rsp = document.getElementById("rsp");
 rsp.id = "rsp";
-rsp.source = "projectindex/projects.html#demoImage";
+rsp.source = "projects/rockScissorPaper/rsp.html#board";
 rsp.summary = "projectindex/projects.html#rsp";
 rsp.category = "games";
-rsp.controls = "";
+rsp.controls = "projects/rockScissorPaper/rsp.html#controls";
 
 var u_demo_1 = document.getElementById("u_demo_1");
 u_demo_1.id = "u_demo_1";
