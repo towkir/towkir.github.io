@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="326.38896"
-     inkscape:cy="191.65036"
+     inkscape:cx="191.15724"
+     inkscape:cy="194.14087"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,25 +58,20 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-77.142858,-172.36222)">
-    <g
-       id="g4295"
-       transform="translate(5.6730984e-6,2.3624218e-6)"
-       style="fill:#00539f;fill-opacity:1">
-      <rect
-         ry="250"
-         y="172.36221"
-         x="77.142853"
-         height="500"
-         width="500"
-         id="rect4138"
-         style="opacity:1;fill:#00539f;fill-opacity:1;stroke:none;stroke-width:30;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <circle
-         r="205.90419"
-         cy="422.36221"
-         cx="327.14285"
-         id="path4140"
-         style="opacity:1;fill:#00539f;fill-opacity:1;stroke:#ffffff;stroke-width:5.71956062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
+    <rect
+       style="opacity:1;fill:#1e1e1e;fill-opacity:1;stroke:none;stroke-width:30;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4138"
+       width="500"
+       height="500"
+       x="77.14286"
+       y="172.36221"
+       ry="250" />
+    <circle
+       style="opacity:1;fill:#1e1e46;fill-opacity:1;stroke:#ffffff;stroke-width:5.71956062;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.2871795"
+       id="path4140"
+       cx="327.14285"
+       cy="422.36221"
+       r="205.90419" />
     <g
        transform="matrix(-0.2,-0.34641016,0.34641016,-0.2,322.32358,476.61128)"
        id="layer1-6"
