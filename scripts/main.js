@@ -66,7 +66,7 @@ rsp.source = "projects/rockScissorPaper/rsp.html#board";
 rsp.summary = "projectindex/projects.html#rsp";
 rsp.category = "games";
 rsp.controls = "projects/rockScissorPaper/rsp.html#controls";
-
+/*
 var u_demo_1 = document.getElementById("u_demo_1");
 u_demo_1.id = "u_demo_1";
 u_demo_1.source = "projectindex/projects.html#demoImage";
@@ -96,8 +96,10 @@ o_demo_2.id = "o_demo_2";
 o_demo_2.source = "projectindex/projects.html#demoImage";
 o_demo_2.summary = "projectindex/projects.html#demo";
 o_demo_2.category = "other";
+*/
+
 // need an array of those objects for looping through;
-var projectList = [tictactoe, puzzle, rsp, u_demo_1, u_demo_2, u_demo_3, o_demo_1, o_demo_2];
+var projectList = [tictactoe, puzzle, rsp/*, u_demo_1, u_demo_2, u_demo_3, o_demo_1, o_demo_2*/];
 // end of object list; 
 var iframeContainer = document.getElementById("project_details");
 var projectWindow = document.createElement("iframe");
@@ -182,9 +184,9 @@ for (i=0;i<ribbon_items.length;i++) {
 // function for enabling the take to top button (up button);
 function scrollToTopButton() {
   if (window.scrollY >= 250) {
-    document.getElementById("up_button").style = "bottom: 50px; opacity: 1;";
+    document.getElementById("up_button").style = "bottom: 10%; opacity: 1;";
   } else {
-    document.getElementById("up_button").style = "bottom: -50px; opacity: 0;";
+    document.getElementById("up_button").style = "bottom: -10%; opacity: 0;";
   }
 }
 // call the function while scroll happens;

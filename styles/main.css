@@ -36,7 +36,8 @@ p {
 }
 
 .header, .footer {
-    width: 1000px;
+    width: 80%;
+    min-width: 500px;
     margin: 0 auto;
 }
 
@@ -92,7 +93,7 @@ p {
 .portfolio_dashboard {
     position: fixed;
     width: 80%;
-    min-width: 1000px;
+    min-width: 400px;
     min-height: 500px;
     height: 80vh;
     top: -200%;
@@ -119,8 +120,8 @@ p {
 #up_button {
     background: rgba(0,0,0,0.5);
     position: fixed;
-    right: 150px;
-    bottom: -50px;
+    right: 10%;
+    bottom: -10%;
     height: 60px;
     width: 60px;
     border-radius: 100%;
@@ -336,7 +337,7 @@ p {
 .footer_container {
     background: rgba(45,45,45,1);
     color: rgba(255,255,255,1);
-    display: block;
+    width: 100%;
     padding: 1%;
     font-size: 70%;
 }
