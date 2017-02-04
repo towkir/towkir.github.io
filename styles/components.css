@@ -1,0 +1,162 @@
+/* html elements and classes styling for this theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    /* the header takes 46px and header is present in all the pages */
+    padding-top: 46px;
+}
+
+/* custom scrollbar (works only on chrome) */
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+/* custom scrollbar */
+
+
+h1 {
+    font-size: 200%;
+}
+
+p {
+    font-size: 90%;
+    display: block;
+}
+
+
+/* styling components used in this theme */
+
+.background {
+    /* this is the background for any row
+    that takes the full width of the screen */
+    width: 100%;
+}
+
+.container, .container-flex {
+    /* immediate child of .background and
+    allows a width of maximum 1200px and aligns to the center */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* I plan for this box to be the container
+     of any elements that takes full width
+     similarly any elements that is named like .box-n
+     n = the number in which the full row/display is divided */
+.box-1, .box-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.box-2 {
+    width: 50%;
+    align-items: flex-start;
+}
+
+/* In this design each box contains two part,
+ .thumbnail and .description, let's style them now */
+
+.thumbnail, .description { /* they are only different by their width */
+    width: 25%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.description {
+    width: 75%;
+    border-left: 1px dotted #808080;
+}
+
+/* shadow effect for content box-2's  */
+.box-2 .description {
+    position: relative;
+    border-left: 0;
+    box-shadow: -5px 0 5px -5px rgba(0,0,0, 0.5);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.box-2 .thumbnail {
+    position: relative;
+    left: 8%;
+    transition: 0.5s;
+}
+
+.box-2:hover .thumbnail  {
+    left: 0;
+}
+
+/* tex content styling for description part */
+
+.box-2 .description h3 {
+    margin-bottom: 5px;
+}
+
+.description p {
+    font-family: monospace;
+    font-size: 100%;
+    line-height: 150%;
+}
+
+.description a {
+    padding: 1px 5px;
+    background: rgba(128, 128, 128, 0.3);
+    border-radius: 2px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.description a:hover,
+.description a:focus,
+.description a:active {
+    background: rgba(128, 128, 128, 0.5);
+    outline: none;
+    color: inherit;
+}
+
+/* for decoration, I need horizontal lines */
+.h-line {
+    height: 1px;
+    width: 80%;
+    background: #AFAEAA;
+    margin: 10px 0;
+}
+
+/* I have my profile photo out there :p */
+.profile-photo, .thumbnail-icon {
+    max-width: 250px;
+    box-shadow: 0 0 1px inset;
+    border-radius: 50%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* similar to my photo, thumbnails have icons */
+.thumbnail-icon {
+    max-width: 100px;
+    border-radius: 5px;
+}

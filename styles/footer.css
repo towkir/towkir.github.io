@@ -1,0 +1,61 @@
+/* for the styles of the footer and it's child only */
+
+.footer-bg {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 5px -2px rgba(0, 0, 0, 0.5) inset;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer {
+    padding: 25px 0;
+}
+
+footer p {
+    font-size: 80%;
+    margin: 15px auto;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer .description ul li a,
+footer .description ul li a:hover,
+footer .description ul li a:active,
+footer .description ul li a:focus {
+    background: transparent;
+    padding: 0;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+#scroll-to-top {
+    background: rgba(255, 255, 255,1);
+    box-shadow: 0 0 3px ;
+    position: fixed;
+    right: -3%;
+    bottom: 10%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    z-index: 50;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.up_arrow{
+    max-width: 25px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
