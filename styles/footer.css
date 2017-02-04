@@ -59,3 +59,8 @@ footer .description ul li a:focus {
     display: block;
     margin: 0 auto;
 }
+
+#themeinfo p {
+    line-height: 120%;
+    font-size: 12px;
+}
