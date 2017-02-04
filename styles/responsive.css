@@ -1,0 +1,51 @@
+/* components are styled in different css, but responsive file is the same for all of them */
+@media screen and (max-width: 868px) {
+    .box-1 .thumbnail {
+        width: 40%;
+    }
+    .box-1 .description {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .icon-nav {
+        display: block;
+    }
+    .icon-nav li a {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .text-nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .box-1 {
+        display: block;
+    }
+
+    .box-1 .thumbnail,
+    .box-1 .description {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-flex {
+        display: block;
+    }
+
+    .box-2 {
+        width: 100%;
+    }
+
+    .box-2 .thumbnail {
+        left: 0;
+    }
+}
+
+/* end of responsive rules */

@@ -8,7 +8,7 @@
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-header ul{
+header ul {
     list-style: none;
 }
 
@@ -37,6 +37,17 @@ header ul li a:focus {
     background: rgba(0, 0, 0, 0);
     outline: none;
     border-bottom: 2px solid rgba(0,0,0, 0.5);
+}
+
+/* icon navbar images size */
+header ul li a img {
+    width: 24px;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+.text-nav, .icon-nav {
+    display: none; /* hidden by default */
 }
 
 /* end of header styles */

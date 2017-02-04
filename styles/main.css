@@ -8,6 +8,8 @@ this seems best to keep the parts separate and piping them into one main file. *
 @import url('header.css');
 @import url('components.css');
 @import url('footer.css');
+@import url('responsive.css');
+
 
 
 

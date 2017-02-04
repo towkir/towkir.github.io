@@ -147,6 +147,7 @@ p {
 
 /* I have my profile photo out there :p */
 .profile-photo, .thumbnail-icon {
+    width: 100%;
     max-width: 250px;
     box-shadow: 0 0 1px inset;
     border-radius: 50%;
@@ -157,6 +158,7 @@ p {
 
 /* similar to my photo, thumbnails have icons */
 .thumbnail-icon {
-    max-width: 100px;
+    min-width: 100px;
+    max-width: 110px;
     border-radius: 5px;
 }
