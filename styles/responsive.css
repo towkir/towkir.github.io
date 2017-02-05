@@ -15,6 +15,14 @@
     .icon-nav li a {
         opacity: 1;
     }
+
+    /* portfolio contents styles */
+    #stack {
+        display: block;
+    }
+
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -31,6 +39,13 @@
     .box-1 .thumbnail,
     .box-1 .description {
         width: 100%;
+        border-left: 0;
+    }
+
+    /* portfolio contents styles */
+    .project-preview iframe {
+        display: block;
+        margin: 0 auto;
     }
 }
 

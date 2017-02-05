@@ -38,6 +38,10 @@ p {
     display: block;
 }
 
+.light {
+    /* a class for the headings to make lighter */
+    font-weight: 200;
+}
 
 /* styling components used in this theme */
 
@@ -89,6 +93,11 @@ p {
 .description {
     width: 75%;
     border-left: 1px dotted #808080;
+}
+
+.description h1 span {
+    font-weight:100;
+    opacity:0.2;
 }
 
 /* shadow effect for content box-2's  */
