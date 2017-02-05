@@ -1,26 +1,26 @@
 
 var tictactoe = {
     id : "tictactoe",
-    source : "http://towkir.github.io/tictactoe/index.html#board",
-    summary : "http://towkir.github.io/tictactoe/index.html#tictactoe",
+    source : "projects/tictactoe/index.html#board",
+    summary : "projects/tictactoe/index.html#tictactoe",
     category : "games",
-    controls : "http://towkir.github.io/tictactoe/index.html#controls"
+    controls : "projects/tictactoe/index.html#controls"
 };
 var puzzle = {
     id : "puzzle",
-    source : "http://towkir.github.io/puzzle/index.html#board",
-    summary : "http://towkir.github.io/puzzle/index.html#puzzle",
+    source : "projects/puzzle/index.html#board",
+    summary : "projects/puzzle/index.html#puzzle",
     category : "games",
-    controls : "http://towkir.github.io/puzzle/index.html#controls"
+    controls : "projects/puzzle/index.html#controls"
 };
 
 
 var rsp = {
     id : "rsp",
-    source : "https://towkir.github.io/rockscissorpaper/index.html#board",
-    summary : "https://towkir.github.io/rockscissorpaper/index.html#rsp",
+    source : "projects/rockscissorpaper/index.html#board",
+    summary : "projects/rockscissorpaper/index.html#rsp",
     category : "games",
-    controls : "https://towkir.github.io/rockscissorpaper/index.html#controls"
+    controls : "projects/rockscissorpaper/index.html#controls"
 };
 
 var projectsDictionary = [tictactoe, puzzle, rsp];
