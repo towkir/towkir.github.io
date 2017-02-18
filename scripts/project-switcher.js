@@ -40,7 +40,7 @@ var projectFinder = function(){
 var showcase = document.getElementById("showcase");
 var frames = showcase.getElementsByTagName("iframe");
 
-function switchdata(){
+var switchdata = function() {
     frames[0].src = chosenProject.source;
     frames[1].src = chosenProject.summary;
     frames[2].src = chosenProject.controls;

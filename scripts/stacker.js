@@ -1,33 +1,37 @@
-
+/*
+    this script manages the functionalities of the the items in the portfolio stack .......
+*/
 var container = document.getElementById("stack");
 var boxes = container.getElementsByClassName("project-thumb");
 
-var maxIndex = boxes.length;
-var moveLeft = 0;
-
-thumbEffect = function() {
-    var currentStyle = window.getComputedStyle(this);
-    var currentLeftPos = parseInt(currentStyle.getPropertyValue('left'));
-    if (currentLeftPos % parseInt(this.offsetWidth/3) == 0) {
-        this.style.left = currentLeftPos + this.offsetWidth / 3 + "px";
-        this.addEventListener('mouseout', function(){this.style.left = currentLeftPos + "px";});
+var stacker = function() {
+    var maxIndex = boxes.length;
+    var moveLeft = 10;
+    for (var i=0; i<boxes.length; i++) {
+        boxes[i].style.zIndex = maxIndex;
+        boxes[i].style.left = moveLeft + "px";
+        boxes[i].initialLeft = parseInt(boxes[i].style.left);
+        maxIndex--;
+        moveLeft += boxes[0].offsetWidth/ (window.innerWidth > 500 ? 2 : 4);
     }
 };
 
-stacker = function() {
-    if (window.innerWidth > 800) {
-        for (var i=0; i<boxes.length; i++) {
-            boxes[i].style.zIndex = maxIndex;
-            boxes[i].style.left = moveLeft + "px";
-            maxIndex--;
-            moveLeft -= boxes[0].offsetWidth/3;
-            boxes[i].addEventListener('mouseover', thumbEffect);
-        }
+var slideEffect = function(){
+    this.style.left = this.initialLeft + this.offsetWidth/ (this.initialLeft == 10 ? 5 : 2.5) + "px";
+};
+
+var slideEffectRevert = function(){
+    this.style.left = this.initialLeft + "px";
+};
+
+var applySlide = function(){
+    //we need to re-align the stack items before applying the slide-effect each time;
+    stacker();
+    for (var i=0; i<boxes.length; i++) {
+        boxes[i].addEventListener('mouseover', slideEffect);
+        boxes[i].addEventListener('mouseout', slideEffectRevert);
     }
 };
 
-
-window.addEventListener('load',stacker);
-//window.addEventListener('resize',stacker);
-
-
+window.addEventListener('load', applySlide);
+window.addEventListener('resize', applySlide);
