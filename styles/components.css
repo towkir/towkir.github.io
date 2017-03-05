@@ -93,6 +93,7 @@ p {
 .description {
     width: 75%;
     border-left: 1px dotted #808080;
+    padding: 10px 15px;
 }
 
 .description h1 span {
