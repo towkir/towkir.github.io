@@ -167,6 +167,7 @@ p {
 }
 
 .profile-photo {
+    transition: 0.5s;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
