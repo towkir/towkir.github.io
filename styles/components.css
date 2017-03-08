@@ -166,6 +166,16 @@ p {
     margin: 0 auto;
 }
 
+.profile-photo {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.profile-photo:hover {
+    -webkit-filter: unset;
+    filter: unset;
+}
+
 /* similar to my photo, thumbnails have icons */
 .thumbnail-icon {
     min-width: 100px;
