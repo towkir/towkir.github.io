@@ -2,9 +2,7 @@
 
 .footer-bg {
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0 1px 5px -2px rgba(0, 0, 0, 0.5) inset;
     width: 100%;
-    margin-top: 50px;
 }
 
 footer {
