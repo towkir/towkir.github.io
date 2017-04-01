@@ -164,10 +164,10 @@ p {
     padding: 10px;
     display: block;
     margin: 0 auto;
+    transition: 0.5s;
 }
 
 .profile-photo {
-    transition: 0.5s;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
@@ -175,6 +175,14 @@ p {
 .profile-photo:hover {
     -webkit-filter: unset;
     filter: unset;
+}
+
+.thumbnail-icon {
+    opacity: 0.7;
+}
+
+.thumbnail-icon:hover {
+    opacity: 1;
 }
 
 /* similar to my photo, thumbnails have icons */
