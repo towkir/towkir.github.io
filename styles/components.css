@@ -1,5 +1,4 @@
 /* html elements and classes styling for this theme */
-
 * {
     margin: 0;
     padding: 0;
@@ -26,8 +25,7 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(0,0,0,0.3);
     border-radius: 5px;
 }
-/* custom scrollbar */
-
+/* custom scrollbar styling ends */
 
 h1 {
     font-size: 200%;
@@ -44,7 +42,6 @@ p {
 }
 
 /* styling components used in this theme */
-
 .background {
     /* this is the background for any row
     that takes the full width of the screen */
@@ -164,7 +161,7 @@ p {
     padding: 10px;
     display: block;
     margin: 0 auto;
-    transition: 0.5s;
+    transition: 3s;
 }
 
 .profile-photo {
@@ -172,7 +169,7 @@ p {
     filter: grayscale(100%);
 }
 
-.profile-photo:hover {
+.box-1:hover .profile-photo {
     -webkit-filter: unset;
     filter: unset;
 }
@@ -181,7 +178,7 @@ p {
     opacity: 0.7;
 }
 
-.thumbnail-icon:hover {
+.box-2:hover .thumbnail .thumbnail-icon {
     opacity: 1;
 }
 
