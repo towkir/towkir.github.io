@@ -93,7 +93,8 @@ p {
     padding: 10px 15px;
 }
 
-.description h1 span {
+.description h1 span,
+.description h3 span {
     font-weight:100;
     opacity:0.2;
 }
