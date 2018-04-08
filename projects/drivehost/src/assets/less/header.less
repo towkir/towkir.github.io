@@ -1,0 +1,53 @@
+header {
+  .navbar {
+    background-color: @white;
+    margin-bottom: 0;
+    border-bottom: 0;
+    box-shadow: 5px 0 3px @shadow-color ;
+  }
+
+  .navbar-header {
+    .logo {
+      a {
+        padding: 10px;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    ul.navbar-nav {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      li {
+
+        .navbar-brand {
+          padding: 0;
+          height: auto;
+          img {
+            height: 40px;
+            padding: 2px;
+            width: auto;
+          }
+        }
+
+        a {
+          color: @black;
+          font-weight: 300;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          transition: 0.3s ease-in-out;
+          &:hover, &:focus, &:active {
+            color: @grey-text;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-toggle {
+    .icon-bar {
+      background-color: @blue;
+    }
+  }
+}

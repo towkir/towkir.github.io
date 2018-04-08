@@ -1,0 +1,55 @@
+/* importing mixing and variables */
+@import "mixins.less";
+@import "variables.less";
+
+
+/* rules for body contents */
+
+  body {
+    font-family: @font-family-base;
+    .font-size(14);
+
+    .btn, .btn-full {
+      padding: 10px 30px;
+      margin: 0;
+      border-radius: 3.5rem;
+      transition: 0.3s;
+      text-transform: none;
+      color: @black;
+      background-color: @white;
+      &:hover, &:active, &:focus {
+        color: @grey;
+      }
+    }
+
+    .btn.blue {
+      border: 1px solid @blue;
+    }
+
+    .btn.green {
+      border: 1px solid @green;
+      background-color: @green;
+      color: @white !important;
+      padding-left: 30px;
+      padding-right: 30px;
+      &:hover {
+        color: @green !important;
+      }
+    }
+
+    .btn.blue.focused {
+      border: 1px solid transparent;
+      background-color: @blue;
+      color: white;
+      &:hover, &:active, &:focus {
+        background-color: @light-blue;
+      }
+    }
+
+    .btn-full {
+      width: 100%;
+    }
+  }
+
+
+

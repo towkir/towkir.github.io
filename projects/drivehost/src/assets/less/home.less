@@ -1,0 +1,331 @@
+main {
+  font-weight: 300;
+  padding-top: 6rem;
+  .main-bg-wrapper {
+    background-image: url('../img/main-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    .intro {
+      background-color: @transparent-blue;
+      .searchbox-container {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        div {
+          background-color: @white;
+          padding: 0.5rem;
+          border-radius: 3.5rem ;
+          margin: 0 auto;
+          width: auto;
+          input {
+            background-color: transparent;
+            border: 0;
+            min-width: 40rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            &:focus, &:active {
+              outline: none;
+            }
+          }
+          select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: none;
+            background-color: transparent;
+          }
+
+          .btn.green {
+            margin-left: 0.5rem;
+            &:hover {
+              background-color: @green-dark;
+              border-color: @green-dark;
+              color: @white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .section-heading {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 5rem;
+      color: @grey;
+    }
+    .service-package {
+      padding: 3rem;
+      transition: 0.3s ease-in-out;
+      border-radius: 5px;
+      color: @grey-text;
+      img {
+        max-width: 100px;
+      }
+
+      h4 {
+        font-weight: 300;
+        margin-bottom: 2rem;
+        color: @grey;
+      }
+
+      .price-box {
+        p {
+          margin-bottom: 5px;
+        }
+        padding: 2rem;
+        .price {
+          color: #3D3D3D;
+          font-size: 2.2rem;
+          font-weight: 400;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 0 8px @shadow-color;
+        .btn {
+          background-color: @blue;
+          color: @white;
+          &:hover, &:active, &:focus {
+            background-color: @light-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .build-site {
+    background-color: @green;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: @white;
+    p {
+      margin-bottom: 0;
+    }
+    .btn {
+      margin-left: 2rem;
+    }
+  }
+
+  .why-us {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .section-heading {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 5rem;
+      color: @grey;
+    }
+
+    .advantages {
+      padding: 3rem  4.5rem;
+      img {
+        max-width: 100px;
+      }
+      h4 {
+        color: @green-text;
+      }
+      p {
+        color: @grey-text;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .testimonials {
+    background-color: @blue;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: @white;
+    text-align: center;
+    .section-heading {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
+      color: @white;
+    }
+
+    .carousel-testimonials {
+      background-color: @white;
+      padding: 3rem 5rem;
+      color: @grey-text;
+      border-radius: 0.5rem;
+      position: relative;
+
+      div.testimonial-item {
+        img {
+          max-width: 80px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: 10%;
+        width: 100vw;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        margin: 0;
+        .owl-prev, .owl-next {
+          margin: 0;
+          border-radius: 0;
+          background-color: rgba(255,255,255,0.3);
+          padding: 4rem 1rem;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background-color: rgba(255,255,255,0.6);
+          }
+        }
+        .owl-prev {
+          position: absolute;
+          left: 0;
+
+          border-radius: 0 0.5rem 0.5rem 0;
+          &:after {
+            font-family: 'FontAwesome';
+            content: "\f104"
+          }
+        }
+        .owl-next {
+          position: absolute;
+          right: 0;
+          border-radius: 0.5rem 0 0 0.5rem;
+          &:before {
+            font-family: 'FontAwesome';
+            content: "\f105"
+          }
+        }
+      }
+
+      .owl-dots {
+        position: absolute;
+        top: calc(~"100% + 1rem");
+        left: 50%;
+        transform: translate(-50%, 0);
+        .owl-dot {
+          span {
+            margin: 5px;
+            background-color: @white;
+            opacity: 0.3;
+          }
+        }
+        .owl-dot.active {
+          span {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .carousel-testimonials + .carousel-testimonials-bg {
+      position: absolute;
+      background-color: rgba(255,255,255,0.6);
+      width: calc(~"100% - 1rem");
+      height: calc(~"100% - 2rem");
+      top: 1rem;
+      left: 0.5rem;
+      z-index: 0;
+      border-radius: 0.6rem;
+    }
+  }
+
+  .hosting-plans {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    .section-heading {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 5rem;
+      color: @grey;
+    }
+    .plan-box-container {
+      padding-left: 0;
+      padding-right: 0;
+      .plan-box {
+        margin-top: 1rem;
+        padding: 3rem;
+        box-shadow: 0 2px 8px @shadow-color;
+        border-radius: 5px;
+        .price {
+          font-size: 1.6rem;
+          margin-bottom: 4rem;
+          span {
+            font-size: 4.2rem;
+          }
+        }
+        ul {
+          li {
+            line-height: 4rem;
+            color: @grey-text;
+            font-weight: 200;
+          }
+        }
+
+        &:hover {
+          box-shadow: 0 0 8px @shadow-color;
+          .btn {
+            background-color: @blue;
+            color: @white;
+            &:hover, &:active, &:focus {
+              background-color: @light-blue;
+            }
+          }
+        }
+      }
+
+      .plan-box.one {
+        box-shadow: -2px 2px 8px @shadow-color;
+      }
+
+      .plan-box.two {
+        box-shadow: 0 2px 8px 2px @shadow-color;
+      }
+
+      .plan-box.three {
+        box-shadow: 2px 2px 8px @shadow-color;
+      }
+
+
+      .plan-box.top {
+        z-index: 10;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-top: 0;
+        position: relative;
+        &:after {
+          position: absolute;
+          font-size: 1.2rem;
+          padding: 0.1rem 1.5rem;
+          content: 'Top';
+          background-color: @orange;
+          color: @white;
+          top: 3rem;
+          right: 0;
+        }
+      }
+    }
+
+  }
+
+  .register {
+    background-color: @green;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: @white;
+    p {
+      margin-bottom: 0;
+    }
+    .btn {
+      margin-left: 2rem;
+    }
+  }
+}
