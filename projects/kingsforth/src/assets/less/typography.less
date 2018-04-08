@@ -1,0 +1,33 @@
+/* importing mixing and variables */
+@import "mixins.less";
+@import "variables.less";
+
+/* rules for body contents */
+
+  body {
+    font-family: @font-family-base;
+    .font-size(16);
+
+    .btn, .btn-full {
+      //background-color: @mongoose;
+      //font-weight: 600;
+      //padding: 10px 30px;
+      margin: 0;
+      //border: 1px solid @mongoose;
+      border-radius: 0.5rem;
+      transition: 0.3s;
+      text-transform: none;
+      &:hover, &:active, &:focus {
+        //color: @white;
+      }
+    }
+
+    .form-control {
+      box-shadow: none;
+      border: 0;
+    }
+
+  }
+
+
+
