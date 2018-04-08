@@ -65,7 +65,7 @@ p {
      of any elements that takes full width
      similarly any elements that is named like .box-n
      n = the number in which the full row/display is divided */
-.box-1, .box-2 {
+.box-1, .box-2, .box-3 {
     width: 100%;
     display: flex;
     align-items: center;
@@ -76,6 +76,31 @@ p {
 .box-2 {
     width: 50%;
     align-items: flex-start;
+}
+
+.box-3 {
+    display: inline-block;
+    width: 33%;
+    margin: 0;
+    padding: 15px;
+}
+
+.template-project-thumb {
+    box-shadow: 0 0 5px -3px rgba(0,0,0,0.5);
+}
+
+.template-project-thumb iframe {
+    width: 100%;
+    max-height: 250px;
+}
+
+.template-project-thumb .template-project-details {
+    padding: 15px;
+}
+
+.template-project-thumb .template-project-details p {
+    margin-top: 5px;
+    font-size: 13px;
 }
 
 /* In this design each box contains two part,
@@ -129,7 +154,7 @@ p {
     line-height: 150%;
 }
 
-.description a {
+.description a, .theme-anchor {
     padding: 1px 5px;
     background: rgba(128, 128, 128, 0.3);
     border-radius: 2px;
