@@ -1,0 +1,137 @@
+/* importing mixing and variables */
+@import "mixins.less";
+@import "variables.less";
+
+/* rules for body contents */
+
+  body {
+    font-family: @font-family-base;
+    //font-size: 14px;
+    p {
+      //line-height: 28px;
+      //font-size: 18px;
+      //color: @text-color;
+    }
+
+    p.below-icons {
+      //font-size: 24px;
+      //line-height: 34px;
+    }
+
+    .page-heading {
+      font-size: 44px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .page-heading.capitalized {
+      text-transform: none;
+    }
+
+    .section-header {
+      font-size: 30px;
+      line-height: 38px;
+      color: @text-color;
+      text-transform: uppercase;
+      font-weight: 300;
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .section-header.capitalized {
+      text-transform: none;
+    }
+
+    .section-header.white {
+      color: @white;
+    }
+
+    .subheader {
+      color: @text-color;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 3rem;
+    }
+
+    .subheader.white {
+      color: @white;
+    }
+
+    .btn, .btn-full {
+      padding: 12px 50px;
+      margin: 1rem;
+      border-radius: 50px;
+      transition: 0.3s;
+      color: @white;
+      font-size: 20px;
+      font-weight: 300;
+      background-color: @blue-brand;
+      text-transform: uppercase;
+      &:hover {
+        color: @white;
+        //background-color: @blue-brand;
+      }
+      &:active, &:focus {
+        color: @white;
+        //background-color: @dark-orange;
+      }
+    }
+
+    .btn.bordered {
+      background-color: transparent;
+      border: 2px solid @blue-brand;
+      &:hover {
+        background-color: @blue-brand;
+      }
+      &:active, &:focus {
+        background-color: @blue-brand;
+      }
+    }
+
+    .btn.bordered.white {
+      background-color: transparent;
+      border: 2px solid @white;
+      &:hover {
+        background-color: @blue-brand;
+      }
+      &:active, &:focus {
+        background-color: @blue-brand;
+      }
+    }
+
+    .no-margin {
+      margin: 0;
+    }
+
+    .btn-full {
+      width: 100%;
+    }
+
+    form {
+      margin-top: 8rem;
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+    }
+
+    .form-control {
+      padding: 30px 16px;
+      font-size: 14px;
+      box-shadow: 0 2px 16px @shadow-color;
+      border: 1px solid transparent;
+
+      &:focus {
+        border: 1px solid transparent;
+        box-shadow: 0 2px 16px @shadow-color;
+      }
+    }
+  }
+
+
+

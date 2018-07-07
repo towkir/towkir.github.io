@@ -1,0 +1,30 @@
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .footer-logo {
+    max-width: 130px;
+  }
+
+  ul.footer-links {
+    list-style: none;
+    padding-left: 0;
+    li {
+      font-size: 1.4rem;
+      line-height: 0.8;
+      color: @text-color;
+      text-transform: uppercase;
+      opacity: .25;
+      a {
+        color: @text-color;
+        &:hover, &:focus, &:active {
+          text-decoration: none;
+        }
+      }
+    }
+
+    li + li {
+      margin-top: 1.5rem;
+    }
+  }
+}

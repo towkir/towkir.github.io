@@ -1,0 +1,571 @@
+main {
+  font-weight: 300;
+  color: @text-color;
+  .main-bg-wrapper {
+    background-image: url('../img/main-background-bottom.svg'), url('../img/home.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: 50% 100%, 50% -1px;
+    .intro {
+      padding: 25rem 0 20rem;
+      h1 {
+        color: @white;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .main-bg-wrapper.about {
+    background-image: url('../img/main-background-bottom.svg'), url('../img/about.png');
+  }
+
+  .main-bg-wrapper.contact {
+    background-image: url('../img/main-background-bottom.svg'), url('../img/contact.png');
+  }
+
+  .main-bg-wrapper.works {
+    background-image: url('../img/main-background-bottom.svg'), url('../img/how-works.png');
+  }
+
+  .financing, .advantages, .old-way, .bad-credit, .testimonials, .story, .mission, .strategy, .pre-approved, .applying, .partners,
+  .common-form, .contact-us, .contact-map-section, .get-car, .steps, .tips, .result {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+
+  .has-hanger {
+    position: relative;
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      height: 10rem;
+      width: 100%;
+      background-image: url('../img/hanger.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+
+  .advantages {
+    background-image: url('../img/why-choose-half.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+
+    h2.why-choose {
+      color: @white;
+      font-size: 46px;
+      line-height: 54px;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 50px @header-shadow;
+    }
+
+    h2.advantages-header {
+      padding-left: 9rem;
+      margin-bottom: 5rem;
+      font-weight: 500;
+    }
+
+    ul.advantages-list {
+      list-style: none;
+      padding-left: 0;
+      transform: rotate(0deg) skew(-23deg);
+      li {
+        line-height: 3rem;
+        transform: rotate(0deg) skew(24deg);
+      }
+    }
+
+  }
+
+  .financing {
+    background-image: url('../img/two-angled-lines.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 90%;
+    .steps-icon {
+      max-width: 200px;
+      margin: 0 auto;
+      display: none;
+    }
+
+    .dotted-bg {
+      background-image: url('../img/dotted-bg.png');
+      background-repeat: no-repeat;
+      background-size: 65%;
+      background-position: center;
+
+      .steps-icon-dotted {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .only-button {
+    padding-top: 6rem;
+  }
+
+  .old-way {
+    .buying-way {
+      max-width: 50px;
+      margin: 2rem auto;
+    }
+  }
+
+  .testimonials {
+    .testimonial-carousel {
+      .skewed-item {
+        padding: 4rem;
+        margin: 2rem;
+        position: relative;
+        min-height: 25rem;
+        &:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          box-shadow: 0 0 30px 5px @shadow-color;
+          transform: skew(-20deg);
+        }
+        .testimonial-provider {
+          border-radius: 50%;
+          max-width: 60px;
+          display: block;
+          margin: 0 auto 2rem;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          text-align: left;
+          transform: skew(-20deg);
+        }
+      }
+    }
+  }
+
+
+  .story {
+    background-image: url('../img/two-angled-lines.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .mission {
+    background-image: url('../img/relationship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+
+
+    h2.relationship {
+      color: @white;
+      font-size: 46px;
+      line-height: 54px;
+      font-weight: 500;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 50px @header-shadow;
+    }
+
+    h2.mission-header {
+      padding-left: 9rem;
+      margin-bottom: 5rem;
+      font-weight: 500;
+    }
+
+    ul.missions {
+      list-style: none;
+      padding-left: 0;
+      transform: rotate(0deg) skew(-23deg);
+
+      li {
+        line-height: 3rem;
+        transform: rotate(0deg) skew(24deg);
+      }
+    }
+
+  }
+
+  .pre-approved, .bad-credit {
+    background-image: url('../img/pre-approved.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 10rem;
+    color: @white;
+    background-color: @orange;
+  }
+
+  .bad-credit {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .secondary-header {
+      color: @white;
+      margin-bottom: 2rem;
+    }
+    p {
+      color: @white;
+    }
+  }
+
+  .partners {
+    .row.has-padding {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    }
+
+    .partner-logo {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      img {
+        margin: 0 auto;
+        max-height: 90px;
+      }
+    }
+  }
+
+  .common-form {
+    background-color: #f8f8f8;
+
+    .subheader {
+      margin-bottom: 2rem;
+      color: @text-color;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .tell-us {
+      font-size: 28px;
+      margin-bottom: 3rem;
+    }
+
+    .form-check {
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      label {
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 14px;
+        margin-left: 5px;
+        font-weight: 600;
+        color: @orange;
+        &:hover, &:focus, &:active, &:visited {
+          text-decoration: none;
+          color: @orange;
+        }
+      }
+    }
+
+    .form-group.submit {
+      padding-top: 3rem;
+    }
+  }
+
+  .contact-us {
+    background-image: url('../img/two-angled-lines.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .contact-map-section {
+    background-image: url('../img/contact-section.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+
+    .secondary-header {
+      padding-left: 10rem;
+      line-height: 6.5rem;
+      span {
+        padding-left: 2rem;
+      }
+    }
+
+    .angeled {
+      list-style: none;
+      line-height: 50px;
+      transform: rotate(0deg) skew(-23deg);
+      li {
+        line-height: 3rem;
+        transform: rotate(0deg) skew(24deg);
+      }
+    }
+
+    .contact-infos {
+      padding-top: 5rem;
+      li {
+        margin-bottom: 2rem;
+        position: relative;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          left: -25px;
+          top: 2px;
+          height: 16px;
+          width: 16px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      li.location {
+        &:before {
+          background-image: url('../img/icons/icon-marker.svg');
+        }
+      }
+
+      li.phone {
+        &:before {
+          background-image: url('../img/icons/icon-phone.svg');
+        }
+      }
+
+      li.mail {
+        &:before {
+          background-image: url('../img/icons/icon-mail.svg');
+        }
+      }
+
+      li.hours {
+        &:before {
+          background-image: url('../img/icons/icon-clock.svg');
+        }
+      }
+    }
+
+    .first {
+      padding-bottom: 8rem;
+    }
+
+    .second {
+      padding-top: 8rem;
+    }
+  }
+
+  .get-car {
+    background-image: url('../img/two-angled-lines.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .steps {
+    padding-top: 0;
+    padding-bottom: 0;
+    .left-step, .right-step {
+      background-image: url('../img/rect-left.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center right;
+      padding: 16rem 9rem 12rem 20rem;
+    }
+
+    .right-step {
+      background-image: url('../img/rect-right.svg');
+      background-position: center left;
+      padding: 16rem 20rem 12rem 9rem;
+    }
+  }
+
+  #preApproved {
+    .modal-dialog {
+      width: auto;
+      max-width: 960px;
+      margin: 60px auto;
+      .modal-content {
+        background-color: @modal-bg;
+        background-image: url('../img/icons/modal-bg.png');
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position: bottom right;
+        .modal-header {
+          position: relative;
+          border-bottom: none;
+          padding: 30px;
+          &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 1px;
+            width: 70%;
+            background-color: @grey;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+          }
+          .modal-heading {
+            font-size: 40px;
+            span {
+              color: @orange;
+            }
+          }
+          .modal-subheader {
+            font-size: 24px;
+            opacity: .4;
+          }
+          .close {
+            position: absolute;
+            right: 30px;
+            img {
+              max-width: 20px;
+            }
+          }
+        }
+        .modal-body {
+          padding: 15px 60px;
+          .tell-us {
+            font-size: 20px;
+            margin-bottom: 3rem;
+          }
+
+          .with-calender {
+            background-image: url('../img/icons/date.png');
+            background-repeat: no-repeat;
+            background-size: 10%;
+            background-position: 95% center;
+          }
+
+          .form-check {
+            input[type="checkbox"] {
+              margin-right: 10px;
+            }
+            label {
+              font-weight: 300;
+              font-size: 14px;
+            }
+
+            a {
+              font-size: 14px;
+              margin-left: 5px;
+              font-weight: 600;
+              color: @orange;
+              &:hover, &:focus, &:active, &:visited {
+                text-decoration: none;
+                color: @orange;
+              }
+            }
+          }
+          .submit {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  #preApproved.modal-as-page {
+    .modal-content {
+      background-color: @modal-bg;
+      background-image: url('../img/icons/modal-bg.png');
+      background-repeat: no-repeat;
+      background-size: 25%;
+      background-position: bottom right;
+      box-shadow: 0 0 10px @shadow-color;
+      border: 1px solid @light-grey;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      .modal-header {
+        position: relative;
+        border-bottom: none;
+        padding: 30px 0;
+        &:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          height: 1px;
+          width: 70%;
+          background-color: @grey;
+          transform: translate(-50%, -50%);
+          opacity: 0.2;
+        }
+        .modal-heading {
+          font-size: 40px;
+          span {
+            color: @orange;
+          }
+        }
+        .modal-subheader {
+          font-size: 24px;
+          opacity: .4;
+        }
+        .close {
+          position: absolute;
+          right: 30px;
+          img {
+            max-width: 20px;
+          }
+        }
+      }
+      .modal-body {
+        padding: 15px 30px;
+        .tell-us {
+          font-size: 20px;
+          margin-bottom: 3rem;
+        }
+
+        .with-calender {
+          background-image: url('../img/icons/date.png');
+          background-repeat: no-repeat;
+          background-size: 10%;
+          background-position: 95% center;
+        }
+
+        .form-check {
+          input[type="checkbox"] {
+            margin-right: 10px;
+          }
+          label {
+            font-weight: 300;
+            font-size: 14px;
+          }
+
+          a {
+            font-size: 14px;
+            margin-left: 5px;
+            font-weight: 600;
+            color: @orange;
+            &:hover, &:focus, &:active, &:visited {
+              text-decoration: none;
+              color: @orange;
+            }
+          }
+        }
+        .submit {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+}

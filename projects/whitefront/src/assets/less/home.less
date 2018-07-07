@@ -1,0 +1,455 @@
+main {
+  font-weight: 300;
+  color: @text-color;
+  .main-bg-wrapper {
+    background-color: rgba(0,0,0,0.2);
+    background-image: url('../img/main-section-overlap-top-grad.svg'), url('../img/main-section-overlap-zigzag.svg'), url('../img/main-section-overlap-abstract.svg');
+    background-repeat: no-repeat;
+    background-size: 102%, 102%, cover;
+    background-position: center 0, center 105%, center 50%;
+    position: relative;
+    overflow: hidden;
+    .intro {
+      .intro-text-wrapper {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        .intro-texts {
+          h1 {
+            color: @white;
+          }
+          .intro-paragraph {
+            color: @white;
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+
+    #background {
+      position: absolute;
+      z-index: -50;
+      min-width: 100%;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .has-seperator {
+    position: relative;
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      top: 120%;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  .pill {
+    margin-bottom: 8rem;
+    &:after {
+      height: 4rem;
+      background-image: url('../img/separator-pill.svg');
+    }
+  }
+
+  .doubled {
+    margin-bottom: 5rem;
+    &:after {
+      height: 1.5rem;
+      background-image: url('../img/divider-doubled.svg');
+    }
+  }
+
+  .doubled-white {
+    margin-bottom: 5rem;
+    &:after {
+      height: 1.5rem;
+      background-image: url('../img/divider-doubled-white.svg');
+    }
+  }
+
+  .right-white {
+    margin-bottom: 5rem;
+    &:after {
+      height: 1.5rem;
+      background-image: url('../img/divider-right.svg');
+      background-position: left, center;
+    }
+  }
+
+  .right-blue {
+    margin-bottom: 5rem;
+    &:after {
+      height: 1.5rem;
+      background-image: url('../img/divider-right-blue.svg');
+      background-position: left, center;
+    }
+  }
+
+  .main-bg-wrapper.about,
+  .main-bg-wrapper.research,
+  .main-bg-wrapper.refill,
+  .main-bg-wrapper.contact {
+    background-image:  url('../img/about-us.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    .intro {
+      background-color: rgba(0,0,0,0.4);
+      background-image: url('../img/main-section-overlap-top-grad.svg'), url('../img/main-section-overlap-zigzag.svg'), url('../img/main-section-overlap-abstract.svg');
+      background-repeat: no-repeat;
+      background-size: 102%, 100%, cover;
+      background-position: center 0, center 105%, center 106%;
+      .intro-text-wrapper {
+        min-height: 78vh;
+        display: flex;
+        align-items: center;
+        .intro-texts {
+          width: 100%;
+          color: @white;
+        }
+      }
+    }
+  }
+
+  .main-bg-wrapper.research {
+    background-image:  url('../img/research.png');
+  }
+
+  .main-bg-wrapper.refill {
+    background-image:  url('../img/rx-refill.png');
+  }
+
+  .main-bg-wrapper.contact {
+    background-image: url('../img/contact-us.png');
+    .intro {
+      background-color: rgba(0,0,0,0);
+      background-image: url('../img/main-section-overlap-top-grad.svg'), url('../img/main-section-overlap-zigzag.svg');
+      background-size: 102%, 102%;
+      background-position: center 0, center 105%;
+    }
+  }
+
+  .main-bg-wrapper.works {
+    //background-image: url('../img/main-background-bottom.svg'), url('../img/how-works.png');
+  }
+
+  .services, .testimonial, .story, .team, .talk {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .services {
+    .services-block-image {
+      display: block;
+      margin: 4rem auto 3rem;
+      width: 40%;
+      max-width: 64px;
+    }
+
+    .services-block-header {
+      color: @blue-brand;
+      font-size: 20px;
+    }
+
+    .services-block-details {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+
+  .our-pharmacy, .research-one, .research-two {
+    .pharmacy-left, .pharmacy-right,
+    .research-left, .research-right {
+      background-image: url('../img/doc-in-pharmacy.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 68rem;
+      padding: 12rem;
+    }
+
+    .pharmacy-left, .research-left {
+      background-image: url('../img/overlapped-border-top-left.svg'), url('../img/overlapped-border-bottom-right.svg'), url('../img/doc-in-pharmacy.png');
+      background-size: contain, contain, cover;
+      background-position: top left, bottom right, center;
+    }
+
+    .pharmacy-right, .research-right {
+      background-image: url('../img/pills-background.png');
+      background-color: @blue-brand;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .research-title {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .research-one {
+    .research-left {
+      background-image: url('../img/overlapped-border-top-left.svg'), url('../img/overlapped-border-bottom-right.svg'), url('../img/research-section-one.png');
+    }
+    .research-right {
+      background: @blue-brand;
+    }
+  }
+
+  .research-two {
+    .research-left {
+      background: @blue-brand;
+    }
+    .research-right {
+      background-image: url('../img/overlapped-border-top-left.svg'), url('../img/overlapped-border-bottom-right.svg'), url('../img/research-section-two.png');
+      background-size: contain, contain, cover;
+      background-position: top left, bottom right, center;
+    }
+  }
+
+  .testimonial {
+    background-image: url('../img/abstract-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-bottom: 10px solid @blue-brand;
+    .testimonial-item {
+      .testimonial-message {
+        position: relative;
+        width: 90%;
+        margin: 5%;
+        padding: 2rem 3rem 1.5rem;
+        box-shadow: 0 2px 16px @shadow-color;
+        .message {
+          font-style: italic;
+          font-size: 16px;
+        }
+        .by {
+          text-align: center;
+          font-size: 16px;
+
+        }
+        &:after {
+        //  creating the down arrow effect;
+          content: '';
+          display: inline-block;
+          box-shadow: 4px 4px 10px @shadow-color;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          background-color: @white;
+          transform-origin: center center;
+          transform: rotate(45deg) translate(-50%, 50%);
+          z-index: 500;
+        }
+      }
+      .testimonial-provider {
+        .testimonial-provider-image {
+          display: block;
+          margin: 4rem auto 2rem;
+          max-width: 70px;
+        }
+      }
+    }
+
+    .owl-theme {
+      .owl-dots {
+        margin-top: 0;
+        .owl-dot {
+          span {
+            width: 12px;
+            height: 12px;
+            margin: 1px 4px;
+          }
+        }
+
+        .owl-dot.active {
+          span {
+            background-color: @blue-brand;
+          }
+        }
+      }
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+      margin-top: 0;
+    }
+  }
+
+  .rx-refill {
+    .rx-refill-left, .rx-refill-right {
+      background-color: @light-grey;
+      min-height: 68rem;
+      padding: 12rem;
+    }
+
+    .rx-refill-left {
+      display: flex;
+      align-items: center;
+      .rx-refill-form {
+        width: 100%;
+      }
+    }
+
+    .rx-refill-right {
+      background-image: url('../img/map-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .story {
+    .story-highlighter {
+      color: @blue-brand;
+      font-size: 70px;
+      line-height: 110px;
+      border-bottom: 1px solid @border-color;
+      display: inline-block;
+      margin-bottom: 2rem;
+      margin-top: 0;
+    }
+
+    .story-highlighter + p {
+      font-size: 20px;
+    }
+  }
+
+  .rx-refill-ribbon {
+    background-image: url('../img/pills-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .color-overlay {
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+      background-color: @blue-brand-overlay;
+    }
+  }
+
+  .rx-refill-ribbon.white {
+    background: @white;
+    .color-overlay {
+      background: transparent;
+    }
+  }
+
+  .team {
+    background-image: url('../img/abstract-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    .section-header {
+      margin-bottom: 8rem;
+    }
+    .team-member {
+      .team-member-image {
+        max-width: 100%;
+      }
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      box-shadow: 0 0 15px @shadow-color;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 600;
+        background-image: url('../img/overlapped-border-top-left.svg'), url('../img/overlapped-border-bottom-right.svg');
+        background-repeat: no-repeat;
+        background-size: contain, contain;
+        background-position: top left, bottom right;
+      }
+    }
+
+    .team-member + p {
+      font-size: 18px;
+    }
+  }
+
+  .partners {
+    background-image: url('../img/partnership.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .color-overlay {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      background-color: @blue-brand-overlay-darker;
+      .section-header {
+        margin-bottom: 8rem;
+      }
+
+      .partner-image {
+        max-width: 100%;
+        display: block;
+        margin: 1rem auto;
+      }
+    }
+  }
+
+  .get-refill {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-image: url('../img/abstract-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    .rx-refill-form {
+      form {
+        margin-top: 3rem;
+        .form-control {
+          box-shadow: 0 0 20px 4px @shadow-color;
+        }
+      }
+    }
+  }
+
+  .talk {
+    background-image: url('../img/abstract-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    .contact-grid {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 3rem auto;
+      border: 2px solid @blue-brand;
+      border-radius: 6px;
+      padding: 6rem;
+      box-shadow: 0 0 20px 4px @shadow-color;
+      cursor: pointer;
+      .contact-grid-image {
+
+      }
+    }
+
+    .contact-grid + p {
+      font-size: 16px;
+      font-weight: 300;
+      color: @text-color;
+    }
+
+    .contact-grid:hover + p {
+      color: @blue-brand;
+    }
+  }
+
+}

@@ -1,0 +1,361 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+  main {
+    .financing {
+      .dotted-bg {
+        display: none;
+      }
+      .steps-icon {
+        display: block;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) {
+  header {
+    .navbar-collapse {
+      ul.navbar-nav {
+        li {
+          a {
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+    .navbar {
+      .navbar-header{
+        .logo {
+          a {
+            img {
+              max-width: 130px;
+            }
+          }
+        }
+      }
+    }
+    .navbar.white {
+      ul {
+        li {
+          a {
+            padding-top: 25px;
+          }
+        }
+      }
+      .navbar-header{
+        .logo {
+          a {
+            img {
+              max-width: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .advantages {
+      background-position: 53% center;
+      h2.advantages-header {
+        padding-left: 5rem;
+      }
+      ul.advantages-list {
+        position: relative;
+        left: -55px;
+      }
+    }
+
+    .mission {
+      background-position: 60% center;
+      h2.mission-header {
+        padding-left: 5rem;
+      }
+      ul.missions {
+        position: relative;
+        left: -55px;
+      }
+    }
+
+    .contact-map-section {
+      position: relative;
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        height: 8rem;
+        width: 100%;
+        background-image: url('../img/hanger.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+      background: none;
+      padding-top: 8rem;
+      padding-bottom: 4rem;
+      .first {
+        padding-bottom: 2rem;
+        .secondary-header {
+          padding: 0;
+          text-align: center;
+          span {
+            padding: 0;
+          }
+        }
+        ul.angeled {
+          text-align: center;
+          transform: none;
+          padding-left: 0;
+          li {
+            transform: none;
+          }
+        }
+      }
+      .second {
+        padding-top: 2rem;
+      }
+    }
+
+    .steps {
+      .left-step, .right-step {
+        background-image: none;
+        padding: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// assuming 1px difference creates a design break
+@media (max-width: 767px) {
+  header {
+    .navbar {
+      background-color: rgba(255,255,255,0.9);
+      .navbar-header {
+        .logo {
+          a {
+            padding: 15px;
+            img {
+              max-height: 50px;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      ul.navbar-nav {
+        li {
+          a {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            color: @text-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 680px)
+@media (max-width: 680px) {
+  main {
+    .advantages {
+      background-image: none;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      .advantages-left-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-image: url('../img/why-choose.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+      }
+      .advantages-right-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .advantages-header {
+          padding-left: 0;
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+        ul.advantages-list {
+          text-align: center;
+          transform: none;
+          left: 0;
+          li {
+            transform: none;
+          }
+        }
+      }
+    }
+
+    .bad-credit {
+      .secondary-header {
+        padding: 0 4rem;
+      }
+    }
+
+    .mission {
+      background-image: none;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      .mission-left-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-image: url('../img/relationship-image.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+        .relationship {
+          margin-top: 2rem;
+        }
+      }
+      .mission-right-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .mission-header {
+          padding-left: 0;
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+        ul.missions {
+          text-align: center;
+          left: 0;
+          transform: none;
+          li {
+            transform: none;
+          }
+        }
+      }
+    }
+
+    .pre-approved {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    #preApproved.modal-as-page {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            padding: 15px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  main {
+    #preApproved.modal-as-page {
+      .modal-content {
+        .modal-body {
+          padding: 15px 10px;
+        }
+      }
+    }
+    .testimonials {
+      .testimonial-carousel {
+        .skewed-item {
+          min-height: 27rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding-top: 3rem;
+    .footer-logo {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  main {
+    .bad-credit {
+      .secondary-header {
+        padding: 0 2rem;
+      }
+    }
+
+    .testimonials {
+      .testimonial-carousel {
+        .skewed-item {
+          min-height: 29rem;
+          .testimonial-provider {
+            margin: 0 auto 2rem 6rem;
+          }
+        }
+      }
+    }
+
+    #preApproved.modal-as-page {
+      .modal-content {
+        .modal-body {
+          padding: 15px 0;
+          .col-xs-6 {
+            &:first-child {
+              padding-right: 7.5px;
+            }
+            &:last-child {
+              padding-left: 7.5px;
+            }
+            .form-control {
+              padding: 24px 10px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    ul.footer-links {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    .testimonials {
+      .testimonial-carousel {
+        .skewed-item {
+          min-height: 31rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  main {
+    .testimonials {
+      .testimonial-carousel {
+        .skewed-item {
+          min-height: 35rem;
+        }
+      }
+    }
+  }
+}
