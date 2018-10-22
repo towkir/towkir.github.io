@@ -1,10 +1,10 @@
 
 var tictactoe = {
     id : "tictactoe",
-    source : "https://towkir.github.io/tictactoe/index.html#board",
-    summary : "https://towkir.github.io/tictactoe/index.html#tictactoe",
+    source : "https://towkir.github.io/tictactoe/dist/index.html#board",
+    summary : "https://towkir.github.io/tictactoe/dist/index.html#tictactoe",
     category : "games",
-    controls : "https://towkir.github.io/tictactoe/index.html#controls"
+    controls : "https://towkir.github.io/tictactoe/dist/index.html#controls"
 };
 var puzzle = {
     id : "puzzle",
