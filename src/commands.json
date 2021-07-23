@@ -1,0 +1,90 @@
+{
+  "achievements": {
+    "type": "table",
+    "helper": "Lists the achievements of the author.",
+    "content": [
+      {
+        "achieved": "Mentor &amp; Contributor\n",
+        "description": "Been a <a href=\"https://wiki.mozilla.org/QA/Community/Bangladesh/Contributors\" target=\"_blank\">contributor</a> and <a href=\"https://wiki.mozilla.org/QA/Community/Bangladesh/Mentors\" target=\"_blank\">mentor</a> of Mozilla since 2014."
+      },
+      {
+        "acheived": "\"about:credits\"",
+        "description": "Been added to the top contributor list of Firefox. <br>Type “about:credits” on the urlbar of any Firefox browser. <br> Alternatively visit: <a href=\"https://www.mozilla.org/credits\" target=\"_blank\">this page</a>."
+      },
+      {
+        "acheived": "Proud Mozillian",
+        "description": "Got some awesome vouches on my mozillian profile as a <br> recognition of my contribution."
+      }
+    ]
+  },
+  "clear": {
+    "helper": "Clears this terminal."
+  },
+  "contributions": {
+    "type": "table",
+    "helper": "Shows a list of the open source projects where the author made some contributions.",
+    "content": [
+      {
+        "contributed": "Fixed bugs for firefox",
+        "description": "Here is link of my bugzilla <a href=\"https://bugzilla.mozilla.org/user_profile?user_id=530933\" target=\"_blank\">profile</a>."
+      },
+      {
+        "contributed": "On StackOverflow",
+        "description": "Tried to give something back to the <a href=\"https://stackoverflow.com/users/4012913/towkir\" target=\"_blank\">community of developers</a>."
+      }
+    ]
+  },
+  "experience": {
+    "type": "table",
+    "helper": "Shows a detailed list of work experiences of the author.",
+    "content": [
+      {
+        "role": "To: Present\nFrom: Nov, 2020",
+        "description": "Sr. Software Engineer (Frontend)\nGo Zayaan"
+      },
+      {
+        "role": "To: Oct, 2020\nFrom: Apr, 2019",
+        "description": "Software Engineer (Frontend)\nGo Zayaan"
+      },
+      {
+        "role": "To: Mar, 2019\nFrom: Jul, 2017",
+        "description": "Frontend Developer\nFlow Digital Ltd."
+      },
+      {
+        "role": "To: May, 2017\nFrom: Nov, 2016",
+        "description": "Frontend Developer\nCodeboxr"
+      }
+    ]
+  },
+  "portfolio": {
+    "helper": "Shows a list of the portfolio projects of the author."
+  },
+  "theme": {
+    "type": "setting",
+    "content": "",
+    "helper": "Changes the theme of this terminal.",
+    "options": {
+      "dark": "Activates dark theme",
+      "light": "Activates light theme",
+      "monochrome": "Activates monochrome theme"
+    }
+  },
+  "whoami": {
+    "type": "info",
+    "content": "Towkir Ahmed\nFronted Engineer | JS Enthusiast | Open Source contributor",
+    "helper": "Shows information about the author of this page."
+  },
+  "--help": {
+    "helper": "Shows this helper menu."
+  },
+  "--version": {
+    "type": "info",
+    "content": "version 1.5",
+    "helper": "Shows a useless version number of this prjoect."
+  },
+  "./human": {
+    "type": "redirect",
+    "route": "human",
+    "helper": "Redirects you to a regular version of this website."
+  }
+}
