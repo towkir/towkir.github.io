@@ -3,7 +3,8 @@
     v-on:keypress="autoFocusInputAndPassKeyPress($event)">
     <p>
       Welcome! <br>
-      This is a basic terminal. If you are a human, type ./human to enter a regular website. <br>
+      This is a basic terminal. If you are a human,
+      type <router-link to="/human">./human</router-link> to enter a regular website. <br>
       If you love terminals, type --help for more info. <br>
       Thanks!
     </p>
@@ -171,6 +172,10 @@ export default {
   &:focus {
     outline: none;
   }
+  a {
+    color: inherit;
+    opacity: 0.8;
+  }
   .commands {
     // margin-bottom: 10px;
     color: var(--primary-color);
@@ -189,10 +194,6 @@ export default {
       }
     }
     div.output {
-      a {
-        color: inherit;
-        opacity: 0.8;
-      }
       &.error {
         color: var(--error-color);
       }
