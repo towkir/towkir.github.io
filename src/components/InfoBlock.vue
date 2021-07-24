@@ -40,7 +40,7 @@ export default {
       margin-bottom: 20px;
       .header {
         margin-bottom: 5px;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 16px;
       }
       a {

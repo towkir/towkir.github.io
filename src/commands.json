@@ -112,7 +112,7 @@
   },
   "whoami": {
     "type": "info",
-    "content": "Towkir Ahmed\nFronted Engineer | JS Enthusiast | Open Source contributor",
+    "content": "Towkir Ahmed\nFronted Engineer | JS Enthusiast | Open Source Contributor",
     "helper": "Shows information about the author of this page."
   },
   "--help": {

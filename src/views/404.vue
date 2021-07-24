@@ -30,18 +30,20 @@ export default {
       font-weight: 800;
     }
     p {
-      font-size: 18px;
+      font-size: 14px;
+      line-height: 1;
       position: absolute;
       transform: translateX(50%);
       left: -50%;
       width: 100%;
-      bottom: 30px;
+      bottom: 58px;
       background-color: var(--background-color);
-      padding: 6px 0;
+      padding: 5px 0;
       text-transform: uppercase;
     }
     a {
       font-size: 14px;
+      line-height: 1;
       color: inherit;
       text-transform: uppercase;
       text-decoration: none;
