@@ -2,23 +2,53 @@
   <div class="home">
     <div class="intro">
       <img src="@/assets/images/towkir.jpg" class="profile-photo" alt="photo-of-towkir">
-      <h1>{{about.name}}</h1>
-      <h5>{{about.bio}}</h5>
+      <div class="details">
+        <h1>{{about.name}}</h1>
+        <h5>{{about.bio}}</h5>
+        <ul class="network-links">
+          <li v-for="(network, n) in networks.content" :key="network.name + n">
+            <a :href="network.link" target="_blank">
+              <i class="fi fi-border ellipse" :class="`${network.iconClass}`"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+    <InfoBlock :info="experience" :view="'table'"/>
+    <InfoBlock :info="skills"/>
+    <InfoBlock :info="achievements"/>
+    <InfoBlock :info="contributions"/>
   </div>
 </template>
 
 <script>
+import InfoBlock from '@/components/InfoBlock.vue';
 import commands from '@/commands.json';
 
 export default {
   name: 'Human',
+  components: { InfoBlock },
   computed: {
     about() {
       return {
         name: commands.whoami.content.split('\n')[0],
         bio: commands.whoami.content.split('\n')[1],
       };
+    },
+    experience() {
+      return commands.experience;
+    },
+    skills() {
+      return commands.skills;
+    },
+    contributions() {
+      return commands.contributions;
+    },
+    achievements() {
+      return commands.achievements;
+    },
+    networks() {
+      return commands.social;
     },
   },
 };
@@ -28,11 +58,38 @@ export default {
 .home {
   font-family: 'Avenir', sans-serif;
   padding: 80px;
+  font-size: 16px;
+  max-width: 1020px;
+  margin: 0 auto;
   .intro {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
     .profile-photo {
       max-width: 150px;
       border-radius: 5px;
-      // border: 2px solid var(--text-color);
+    }
+    .details {
+      padding: 20px;
+      .network-links {
+        list-style: none;
+        margin-top: 10px;
+        li {
+          display: inline-block;
+          &:not(&:last-child) {
+            margin-right: 5px
+          }
+          a {
+            display: inline-block;
+            color: var(--text-color);
+            font-size: 14px;
+            i {
+              border-color: var(--text-color);
+              border-width: 1px;
+            }
+          }
+        }
+      }
     }
   }
 }

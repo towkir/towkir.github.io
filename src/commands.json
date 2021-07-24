@@ -2,6 +2,7 @@
   "achievements": {
     "type": "table",
     "helper": "Lists the achievements of the author.",
+    "title": "Achievements",
     "content": [
       {
         "achieved": "Mentor &amp; Contributor\n",
@@ -23,6 +24,7 @@
   "contributions": {
     "type": "table",
     "helper": "Shows a list of the open source projects where the author made some contributions.",
+    "title": "Contributions",
     "content": [
       {
         "contributed": "Fixed bugs for firefox",
@@ -37,6 +39,7 @@
   "experience": {
     "type": "table",
     "helper": "Shows a detailed list of work experiences of the author.",
+    "title": "Experience",
     "content": [
       {
         "role": "To: Present\nFrom: Nov, 2020",
@@ -56,8 +59,47 @@
       }
     ]
   },
-  "portfolio": {
-    "helper": "Shows a list of the portfolio projects of the author."
+  "skills": {
+    "type": "table",
+    "helper": "Shows a list of the skills of the author.",
+    "title": "Skills",
+    "content": [
+      {
+        "title": "Languages / Frameworks",
+        "description": "JavaScript, VueJS, CSS, Sass, LESS, HTML"
+      },
+      {
+        "title": "Tools",
+        "description": "Git, Mercurial, Webpack, Parcel, Gulp, Jest, npm, yarn"
+      }
+    ]
+  },
+  "social": {
+    "type": "list",
+    "helper": "Shows a list of social network links of the author.",
+    "title": "Networks",
+    "content": [
+      {
+        "name": "github",
+        "link": "https://github.com/towkir",
+        "iconClass": "fi-github"
+      },
+      {
+        "name": "stackoverflow",
+        "link": "https://stackoverflow.com/users/4012913/towkir",
+        "iconClass": "fi-stack-overflow"
+      },
+      {
+        "name": "linkedin",
+        "link": "https://www.linkedin.com/in/towkir/",
+        "iconClass": "fi-linkedin"
+      },
+      {
+        "name": "facebook",
+        "link": "https://www.facebook.com/towkir17",
+        "iconClass": "fi-facebook"
+      }
+    ]
   },
   "theme": {
     "type": "setting",
