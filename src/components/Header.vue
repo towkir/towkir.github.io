@@ -52,4 +52,12 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 570px) {
+  .header-wrapper {
+    .content {
+      padding: 15px 30px;
+    }
+  }
+}
 </style>

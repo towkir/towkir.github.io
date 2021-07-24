@@ -101,4 +101,28 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    .home {
+      padding: 80px 30px 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .wrapper {
+    .home {
+      .intro {
+        display: block;
+        .profile-photo {
+          max-width: 130px;
+        }
+        .details {
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+}
 </style>

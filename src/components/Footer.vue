@@ -19,4 +19,10 @@ export default {
   border-top: 1px solid var(--border-color);
   font-size: 14px;
 }
+
+@media screen and (max-width: 570px) {
+  .footer {
+    padding: 15px 30px;
+  }
+}
 </style>
