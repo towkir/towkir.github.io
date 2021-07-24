@@ -68,10 +68,13 @@ export default {
         }, 10);
       }
     },
-    handleSettings(setting, value) {
+    handleMultiCommands(setting, value) {
       if (setting === 'theme' && Object.keys(commands[setting].options).includes(value)) {
         this.setTheme(value);
         return { type: 'success', content: `Theme changed to ${value}` };
+      }
+      if (!commands[setting].options) {
+        return { type: 'error', content: `command "${setting}" doesn't accept any options` };
       }
       return { type: 'error', content: `${value} is not a valid option for ${setting}` };
     },
@@ -109,8 +112,11 @@ export default {
                 .map(item => `<div><span>${command} ${item[0]}</span><span>${item[1]}</span></div>`)
                 .join('\n'),
             };
-          } // else
-          return this.handleSettings(...fullCommand);
+          }
+          // return this.handleMultiCommands(...fullCommand);
+        }
+        if (fullCommand.length > 1) {
+          return this.handleMultiCommands(...fullCommand);
         }
         if (commands[fullCommand[0]].type === 'info') {
           return {
