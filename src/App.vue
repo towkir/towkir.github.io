@@ -30,26 +30,17 @@ export default {
 @import url('~@/assets/fonts/fontisto-brands.css');
 
 :root {
-  --text-color: #b9a336;
-  --background-color: #2A363B;
-  --command-color: #9DE0AD;
+  --text-color: #d0d0d0;
+  --background-color: #282c34;
+  --command-color: #00c32f;
   --error-color: #ff7a7a;
   --success-color: #10ff00;
   --scrollbar-color: rgba(0,0,0,0.3);
 }
 
 [data-theme="light"] {
-  --text-color: #1e8fc5;
-  --background-color: #dae2c7;
-  --command-color: #000;
-  --error-color: #ff7a7a;
-  --success-color: #0aa200;
-  --scrollbar-color: rgba(0,0,0,0.1);
-}
-
-[data-theme="monochrome"] {
-  --text-color: #797979;
-  --background-color: #f3f3f3;
+  --text-color: #676767;
+  --background-color: #e4e4e4;
   --command-color: #000;
   --error-color: #ad5c5c;
   --success-color: #649860;

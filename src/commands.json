@@ -107,8 +107,7 @@
     "helper": "Changes the theme of this terminal.",
     "options": {
       "dark": "Activates dark theme",
-      "light": "Activates light theme",
-      "monochrome": "Activates monochrome theme"
+      "light": "Activates light theme"
     }
   },
   "whoami": {
