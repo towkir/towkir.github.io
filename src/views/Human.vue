@@ -78,6 +78,9 @@ export default {
       }
       .details {
         padding: 20px;
+        h5 {
+          font-weight: normal;
+        }
         .network-links {
           list-style: none;
           margin-top: 10px;

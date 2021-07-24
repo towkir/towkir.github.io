@@ -29,6 +29,8 @@ export default {
 
 @import url('~@/assets/fonts/fontisto-brands.css');
 @import url('~@/assets/fonts/fontisto.css');
+@import url('~@/assets/fonts/menlo.css');
+@import url('~@/assets/fonts/avenir.css');
 
 :root {
   --text-color: #d0d0d0;
