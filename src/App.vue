@@ -31,6 +31,7 @@ export default {
 
 :root {
   --text-color: #d0d0d0;
+  --border-color: #6f6f6f;
   --background-color: #282c34;
   --command-color: #00c32f;
   --error-color: #ff7a7a;
@@ -40,6 +41,7 @@ export default {
 
 [data-theme="light"] {
   --text-color: #676767;
+  --border-color: #c5c5c5;
   --background-color: #e4e4e4;
   --command-color: #000;
   --error-color: #ad5c5c;
