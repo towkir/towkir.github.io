@@ -1,8 +1,8 @@
 <template>
   <div class="header-wrapper">
     <div class="content">
-      <i class="fi fi-adjust" v-on:click="toggleTheme()"></i> |
-      <router-link to="/">$terminal</router-link>
+      <i class="fi fi-adjust" title="Switch theme" v-on:click="toggleTheme()"></i> |
+      <router-link to="/" title="Visit terminal page">$terminal</router-link>
     </div>
   </div>
 </template>
