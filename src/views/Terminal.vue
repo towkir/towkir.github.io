@@ -17,7 +17,8 @@
         {'success' : log.result.type === 'success'}]"
         v-if="log.result.type === 'info'
         || log.result.type === 'error'
-        || log.result.type === 'success'"
+        || log.result.type === 'success'
+        || log.result.type === 'list'"
         v-html="log.result.content">
       </div>
       <div class="output success" v-if="log.result.type === 'dynamic-success'">
@@ -127,6 +128,12 @@ export default {
               .join('<br>'),
           };
         }
+        if (commands[fullCommand[0]].type === 'list') {
+          return {
+            type: 'list',
+            content: commands[command].content.map(link => `<a href="${link.link}" target="_blank">${link.name}</a>`).join(', '),
+          };
+        }
         if (commands[fullCommand[0]].type === 'redirect') {
           return this.handleRedirections(commands[fullCommand[0]].route);
         }
@@ -176,6 +183,10 @@ export default {
       }
     }
     div.output {
+      a {
+        color: inherit;
+        opacity: 0.8;
+      }
       &.error {
         color: var(--error-color);
       }
@@ -193,10 +204,6 @@ export default {
               width: 1%;
               min-width: 200px;
               padding: 0 30px 0 20px;
-            }
-            a {
-              color: inherit;
-              opacity: 0.8;
             }
           }
         }

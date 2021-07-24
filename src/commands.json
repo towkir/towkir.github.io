@@ -74,7 +74,7 @@
       }
     ]
   },
-  "social": {
+  "networks": {
     "type": "list",
     "helper": "Shows a list of social network links of the author.",
     "title": "Networks",

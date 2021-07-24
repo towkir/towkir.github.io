@@ -48,7 +48,7 @@ export default {
       return commands.achievements;
     },
     networks() {
-      return commands.social;
+      return commands.networks;
     },
   },
 };
