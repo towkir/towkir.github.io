@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper">
     <div class="content">
-      <!-- <i class="fi fi-adjust"></i> | -->
+      <i class="fi fi-adjust" v-on:click="toggleTheme()"></i> |
       <router-link to="/">$terminal</router-link>
     </div>
   </div>
@@ -10,6 +10,14 @@
 <script>
 export default {
   name: 'Header',
+  methods: {
+    toggleTheme() {
+      const currentTheme = localStorage.getItem('theme');
+      const themeToSet = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', themeToSet);
+      localStorage.setItem('theme', themeToSet);
+    },
+  },
 };
 </script>
 
