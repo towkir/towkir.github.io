@@ -6,7 +6,7 @@
        url('Avenir-Black.ttf') format('truetype'),
        url('Avenir-Black.woff') format('woff'),
        url('Avenir-Black.woff2') format('woff2');
-  font-weight: Black;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -18,7 +18,7 @@
        url('Avenir-BlackOblique.ttf') format('truetype'),
        url('Avenir-BlackOblique.woff') format('woff'),
        url('Avenir-BlackOblique.woff2') format('woff2');
-  font-weight: Black;
+  font-weight: 800;
   font-style: oblique;
 }
 
@@ -30,7 +30,7 @@
        url('Avenir-Book.ttf') format('truetype'),
        url('Avenir-Book.woff') format('woff'),
        url('Avenir-Book.woff2') format('woff2');
-  font-weight: Book;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -42,7 +42,7 @@
        url('Avenir-BookOblique.ttf') format('truetype'),
        url('Avenir-BookOblique.woff') format('woff'),
        url('Avenir-BookOblique.woff2') format('woff2');
-  font-weight: Book;
+  font-weight: 400;
   font-style: oblique;
 }
 
@@ -54,7 +54,7 @@
        url('Avenir-Heavy.ttf') format('truetype'),
        url('Avenir-Heavy.woff') format('woff'),
        url('Avenir-Heavy.woff2') format('woff2');
-  font-weight: Heavy;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -66,7 +66,7 @@
        url('Avenir-HeavyOblique.ttf') format('truetype'),
        url('Avenir-HeavyOblique.woff') format('woff'),
        url('Avenir-HeavyOblique.woff2') format('woff2');
-  font-weight: Heavy;
+  font-weight: 700;
   font-style: oblique;
 }
 
@@ -78,7 +78,7 @@
        url('Avenir-Light.ttf') format('truetype'),
        url('Avenir-Light.woff') format('woff'),
        url('Avenir-Light.woff2') format('woff2');
-  font-weight: light;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -90,7 +90,7 @@
        url('Avenir-LightOblique.ttf') format('truetype'),
        url('Avenir-LightOblique.woff') format('woff'),
        url('Avenir-LightOblique.woff2') format('woff2');
-  font-weight: light;
+  font-weight: 300;
   font-style: oblique;
 }
 
@@ -102,7 +102,7 @@
        url('Avenir-Medium.ttf') format('truetype'),
        url('Avenir-Medium.woff') format('woff'),
        url('Avenir-Medium.woff2') format('woff2');
-  font-weight: medium;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -114,7 +114,7 @@
        url('Avenir-MediumOblique.ttf') format('truetype'),
        url('Avenir-MediumOblique.woff') format('woff'),
        url('Avenir-MediumOblique.woff2') format('woff2');
-  font-weight: medium;
+  font-weight: 600;
   font-style: oblique;
 }
 
