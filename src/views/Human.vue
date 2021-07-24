@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <Header/>
     <div class="home">
       <div class="intro">
         <img src="@/assets/images/towkir.jpg" class="profile-photo" alt="photo-of-towkir">
@@ -25,13 +26,14 @@
 </template>
 
 <script>
+import Header from '@/components/Header.vue';
 import InfoBlock from '@/components/InfoBlock.vue';
 import Footer from '@/components/Footer.vue';
 import commands from '@/commands.json';
 
 export default {
   name: 'Human',
-  components: { InfoBlock, Footer },
+  components: { Header, InfoBlock, Footer },
   computed: {
     about() {
       return {
@@ -62,7 +64,7 @@ export default {
 .wrapper {
   font-family: 'Avenir', sans-serif;
   .home {
-    padding: 80px;
+    padding: 100px 80px 80px;
     font-size: 16px;
     max-width: 1020px;
     margin: 0 auto;

@@ -33,6 +33,8 @@ export default {
   --text-color: #d0d0d0;
   --border-color: #6f6f6f;
   --background-color: #282c34;
+  --header-background-color: rgba(40, 44, 52, 0.15);
+  --header-shadow-color: rgba(0, 0, 0, .2);
   --command-color: #00c32f;
   --error-color: #ff7a7a;
   --success-color: #10ff00;
@@ -43,6 +45,8 @@ export default {
   --text-color: #676767;
   --border-color: #c5c5c5;
   --background-color: #e4e4e4;
+  --header-background-color: rgba(255, 255, 255, 0.15);
+  --header-shadow-color: rgba(0, 0, 0, .2);
   --command-color: #000;
   --error-color: #ad5c5c;
   --success-color: #649860;
