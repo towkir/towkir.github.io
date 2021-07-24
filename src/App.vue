@@ -27,6 +27,8 @@ export default {
   padding: 0;
 }
 
+@import url('~@/assets/fonts/fontisto-brands.css');
+
 :root {
   --text-color: #b9a336;
   --background-color: #2A363B;
