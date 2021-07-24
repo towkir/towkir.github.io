@@ -3,7 +3,7 @@
     v-on:keypress="autoFocusInputAndPassKeyPress($event)">
     <p>
       Welcome! <br>
-      This is a basic terminal. If you are a human,
+      This is a basic terminal. If it's confusing,
       type <router-link to="/human">./human</router-link> to enter a regular website. <br>
       If you love terminals, type --help for more info. <br>
       Thanks!
