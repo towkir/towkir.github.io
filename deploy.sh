@@ -5,6 +5,8 @@ set -e
 npm run build
 # navigate into the build output directory
 cd dist
+# here is the workaround for 404 issue on direct route landing
+cp index.html 404.html && cd ..
 # for deploying to a custom domain
 # echo 'www.example.com' > CNAME
 git init
