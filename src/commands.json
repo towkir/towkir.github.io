@@ -59,21 +59,6 @@
       }
     ]
   },
-  "skills": {
-    "type": "table",
-    "helper": "Shows a list of the skills of the author.",
-    "title": "Skills",
-    "content": [
-      {
-        "title": "Languages / Frameworks",
-        "description": "JavaScript, VueJS, CSS, Sass, LESS, HTML"
-      },
-      {
-        "title": "Tools",
-        "description": "Git, Mercurial, Webpack, Parcel, Gulp, Jest, npm, yarn"
-      }
-    ]
-  },
   "networks": {
     "type": "list",
     "helper": "Shows a list of social network links of the author.",
@@ -98,6 +83,21 @@
         "name": "facebook",
         "link": "https://www.facebook.com/towkir17",
         "iconClass": "fi-facebook"
+      }
+    ]
+  },
+  "skills": {
+    "type": "table",
+    "helper": "Shows a list of the skills of the author.",
+    "title": "Skills",
+    "content": [
+      {
+        "title": "Languages / Frameworks",
+        "description": "JavaScript, VueJS, CSS, Sass, LESS, HTML"
+      },
+      {
+        "title": "Tools",
+        "description": "Git, Mercurial, Webpack, Parcel, Gulp, Jest, npm, yarn"
       }
     ]
   },

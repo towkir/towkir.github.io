@@ -98,8 +98,8 @@ export default {
       if (command === '--help') {
         return {
           type: 'table',
-          content: Object.entries(commands)
-            .map(item => `<div><span>${item[0]}</span><span>${item[1].helper}</span></div>`)
+          content: Object.keys(commands).sort()
+            .map(item => `<div><span>${item}</span><span>${commands[item].helper}</span></div>`)
             .join('\n'),
         };
       }
