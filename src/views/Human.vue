@@ -74,7 +74,7 @@ export default {
       align-items: flex-start;
       .profile-photo {
         max-width: 150px;
-        border-radius: 5px;
+        border-radius: 50%;
       }
       .details {
         padding: 20px;
