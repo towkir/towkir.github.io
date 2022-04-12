@@ -3,7 +3,9 @@
     <Header/>
     <div class="home">
       <div class="intro">
-        <img src="@/assets/images/towkir.jpg" class="profile-photo" alt="photo-of-towkir">
+        <div class="profile-photo">
+          <img src="@/assets/images/towkir.jpg" alt="photo-of-towkir">
+        </div>
         <div class="details">
           <h1>{{about.name}}</h1>
           <h5>{{about.bio}}</h5>
@@ -73,8 +75,14 @@ export default {
       display: flex;
       align-items: flex-start;
       .profile-photo {
-        max-width: 150px;
+        width: 150px;
+        height: 150px;
+        background-color: var(--text-color);
         border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
       }
       .details {
         padding: 20px;
@@ -119,7 +127,8 @@ export default {
       .intro {
         display: block;
         .profile-photo {
-          max-width: 130px;
+          width: 130px;
+          height: 130px;
         }
         .details {
           padding: 15px 0;
