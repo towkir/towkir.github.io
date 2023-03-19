@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper">
     <div class="content">
-      <i class="fi fi-adjust" title="Switch theme" v-on:click="toggleTheme()"></i> |
+      <button class="fi fi-adjust" title="Switch theme" v-on:click="toggleTheme()"></button> |
       <router-link to="/" title="Visit terminal page">$terminal</router-link>
     </div>
   </div>
@@ -39,9 +39,13 @@ export default {
     padding: 20px 80px;
     text-align: right;
     user-select: none;
-    i {
+    button {
       vertical-align: middle;
       cursor: pointer;
+      appearance: none;
+      border: 0;
+      background-color: transparent;
+      color: inherit;
     }
     a {
       color: inherit;
