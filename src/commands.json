@@ -9,11 +9,11 @@
         "description": "Been a <a href=\"https://wiki.mozilla.org/QA/Community/Bangladesh/Contributors\" target=\"_blank\">contributor</a> and <a href=\"https://wiki.mozilla.org/QA/Community/Bangladesh/Mentors\" target=\"_blank\">mentor</a> of Mozilla since 2014."
       },
       {
-        "acheived": "\"about:credits\"",
+        "achieved": "\"about:credits\"",
         "description": "Been added to the top contributor list of Firefox. <br>Type “about:credits” on the urlbar of any Firefox browser. <br> Alternatively visit: <a href=\"https://www.mozilla.org/credits\" target=\"_blank\">this page</a>."
       },
       {
-        "acheived": "Proud Mozillian",
+        "achieved": "Proud Mozillian",
         "description": "Got some awesome vouches on my mozillian profile as a <br> recognition of my contribution."
       }
     ]
@@ -28,7 +28,7 @@
     "content": [
       {
         "contributed": "Fixed bugs for firefox",
-        "description": "Here is link of my bugzilla <a href=\"https://bugzilla.mozilla.org/user_profile?user_id=530933\" target=\"_blank\">profile</a>."
+        "description": "Here is a link of my bugzilla <a href=\"https://bugzilla.mozilla.org/user_profile?user_id=530933\" target=\"_blank\">profile</a>."
       },
       {
         "contributed": "On StackOverflow",
@@ -112,7 +112,7 @@
   },
   "whoami": {
     "type": "info",
-    "content": "Towkir Ahmed\nFronted Engineer | JS Enthusiast | Open Source Contributor",
+    "content": "Towkir Ahmed\nFrontend Engineer | JS Enthusiast | Open Source Contributor",
     "helper": "Shows information about the author of this page."
   },
   "--help": {
